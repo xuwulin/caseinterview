@@ -44,5 +44,10 @@ public class Singleton3 {
 	public String toString() {
 		return "Singleton3 [info=" + info + "]";
 	}
+
+	public static void main(String[] args) {
+		Singleton3 singleton3 = Singleton3.INSTANCE;
+		System.out.println(singleton3); // Singleton3 [info=atguigu]
+	}
 	
 }

@@ -27,7 +27,7 @@ public class Singleton5 {
 			}
 		}*/
 
-    	// 方式二：效率高
+    	// 方式二：效率高 双端检测机制
         if (instance == null) {
             synchronized (Singleton5.class) { // 静态方法的同步监视器为 当前类.class
                 if (instance == null) {

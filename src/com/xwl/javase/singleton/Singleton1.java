@@ -18,4 +18,9 @@ public class Singleton1 {
 	public static final Singleton1 INSTANCE = new Singleton1();
 	// 构造器私有
 	private Singleton1(){}
+
+	public static void main(String[] args) {
+		Singleton1 s = Singleton1.INSTANCE;
+		System.out.println(s); // com.xwl.javase.singleton.Singleton1@1540e19d
+	}
 }
