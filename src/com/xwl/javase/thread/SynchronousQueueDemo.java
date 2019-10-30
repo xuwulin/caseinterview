@@ -35,19 +35,21 @@ public class SynchronousQueueDemo {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "\t" + blockingQueue.take());
+                System.out.println(Thread.currentThread().getName() + " take " + blockingQueue.take());
+
                 try {
                     TimeUnit.SECONDS.sleep(5);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "\t" + blockingQueue.take());
+                System.out.println(Thread.currentThread().getName() + "\t take " + blockingQueue.take());
+
                 try {
                     TimeUnit.SECONDS.sleep(5);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "\t" + blockingQueue.take());
+                System.out.println(Thread.currentThread().getName() + "\t take " + blockingQueue.take());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
